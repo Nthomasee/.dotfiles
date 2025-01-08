@@ -3,10 +3,12 @@ autoload -Uz compinit promptinit
 compinit
 promptinit
 zstyle ':completion:*' menu select
+export EDITOR=nvim
 #================================
 
 #============History=============
 HISTORY_IGNORE="mpv*"
+HISTORY_IGNORE="clear"
 export HISTFILE=~/.histfile_zsh
 export SAVEHIST=1000000
 export HISTSIZE=$SAVEHIST
@@ -25,7 +27,7 @@ setopt SHARE_HISTORY             # Share history between all sessions.
 alias ls='ls --color=auto'
 alias lsa="ls --color=auto -A"
 alias lsal="ls --color=auto -Al"
-alias vim="nvim"
+alias v="nvim"
 alias tmn="timedatectl status | grep Local"
 alias ffc="fastfetch -c ~/.config/fastfetch/qwe.jsonc"
 alias notift="swaync-client -t"
