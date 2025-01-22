@@ -18,7 +18,6 @@ return require('packer').startup(function(use)
   use('neovim/nvim-lspconfig')
   use('hrsh7th/nvim-cmp')
   use('hrsh7th/cmp-nvim-lsp')
-  use "nvim-lua/plenary.nvim" -- don't forget to add this one if you don't have it yet!
-  use { "catppuccin/nvim", as = "catppuccin" }
-  
+  use('nvim-lua/plenary.nvim') -- don't forget to add this one if you don't have it yet!
+  use('ellisonleao/gruvbox.nvim') 
 end)

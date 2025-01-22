@@ -34,6 +34,7 @@ alias notift="swaync-client -t"
 alias ipower="upower -i $(upower -e | grep BAT)"
 alias mpv720="mpv --ytdl-format='bestvideo[height=720]+bestaudio/best'"
 alias rtd="cal && rtime"
+alias sshnout="ssh -i ~/.ssh/pisyapopa 'nathan@192.168.0.135'"
 #================================
 
 #============Plugins=============

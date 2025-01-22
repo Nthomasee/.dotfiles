@@ -48,6 +48,7 @@ require'lspconfig'.rust_analyzer.setup{
     }
   }
 }
+require'lspconfig'.zls.setup{}
 local cmp = require('cmp')
 
 cmp.setup({
