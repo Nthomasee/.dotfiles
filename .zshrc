@@ -4,6 +4,8 @@ compinit
 promptinit
 zstyle ':completion:*' menu select
 export EDITOR=nvim
+bindkey -v
+export KEYTIMEOUT=5
 #================================
 
 #============History=============
