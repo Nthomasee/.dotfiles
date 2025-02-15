@@ -5,8 +5,6 @@ promptinit
 zstyle ':completion:*' menu select
 export EDITOR=nvim
 export SDL_VIDEODRIVER=wayland
-bindkey -v
-export KEYTIMEOUT=5
 #================================
 
 #============History=============
@@ -51,3 +49,4 @@ export DIFFPROG="nvim -d"
 
 # Created by `pipx` on 2025-01-28 22:41:37
 export PATH="$PATH:/home/nathan/.local/bin"
+export PATH=/usr/local/texlive/2024/bin/x86_64-linux:$PATH

@@ -20,4 +20,5 @@ return require('packer').startup(function(use)
   use('hrsh7th/cmp-nvim-lsp')
   use('nvim-lua/plenary.nvim') -- don't forget to add this one if you don't have it yet!
   use('ellisonleao/gruvbox.nvim') 
+  use('lervag/vimtex')
 end)
