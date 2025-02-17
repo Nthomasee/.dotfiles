@@ -8,6 +8,7 @@ abbr -a -- v 'nvim'
 abbr -a -- osu '~/Downloads/osu.AppImage'
 abbr -a -- ffc 'fastfetch -c ~/.config/fastfetch/qwe.jsonc'
 abbr -a -- dots 'cd ~/.dotfiles'
+abbr -a -- weather 'curl wttr.in'
 #=============================================
 
 
