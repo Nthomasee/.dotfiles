@@ -17,11 +17,6 @@ vim.keymap.set("n", "<leader>gs", vim.cmd.Git) --fugitive
 
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle) --undotree
 
-vim.keymap.set('i', '"', '""<left>')
-vim.keymap.set('i', "'", "''<left>")
-vim.keymap.set('i', '(', '()<left>')
-vim.keymap.set('i', '[', '[]<left>')
-vim.keymap.set('i', '{', '{}<left>')
 
 -- Advanced block closing mappings
 vim.keymap.set('i', '{<CR>', '{<CR>}<ESC>O')

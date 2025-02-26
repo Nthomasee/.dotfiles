@@ -9,6 +9,7 @@ abbr -a -- osu '~/Downloads/osu.AppImage'
 abbr -a -- ffc 'fastfetch -c ~/.config/fastfetch/qwe.jsonc'
 abbr -a -- dots 'cd ~/.dotfiles'
 abbr -a -- weather 'curl wttr.in'
+abbr -a -- update 'sudo pacman -Syu'
 #=============================================
 
 
@@ -31,3 +32,6 @@ zoxide init fish | source
 #=============================================
 
 end
+
+# Created by `pipx` on 2025-02-23 23:52:59
+set PATH $PATH /home/nathan/.local/bin

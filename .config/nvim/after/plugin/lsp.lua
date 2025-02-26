@@ -37,7 +37,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 -- You'll find a list of language servers here:
 -- HTTPS://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md
 -- These are example language servers. 
--- require'lspconfig'.clangd.setup{}
+require'lspconfig'.clangd.setup{}
 require'lspconfig'.pyright.setup{}
 require'lspconfig'.rust_analyzer.setup{
   settings = {
