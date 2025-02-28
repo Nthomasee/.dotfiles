@@ -73,7 +73,7 @@
     },
     "temperature": {
         // "thermal-zone": 2,
-        "hwmon-path": "/sys/devices/platform/nct6775.656/hwmon/hwmon3/temp2_input",
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
         "format-critical": "{temperatureC}°C",
         "format": " {temperatureC}°C]",
