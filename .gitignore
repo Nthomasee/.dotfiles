@@ -1,2 +1,3 @@
 .config/nvim/plugin
 .config/fish/fish_variables
+.config/nvim/lazy-lock.json
