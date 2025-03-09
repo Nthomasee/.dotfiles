@@ -36,6 +36,15 @@ require("lazy").setup({
         {'neovim/nvim-lspconfig'},
         {'hrsh7th/cmp-nvim-lsp'},
         {'hrsh7th/nvim-cmp'},
+        {
+            "lervag/vimtex",
+            lazy = false,     -- we don't want to lazy load VimTeX
+            -- tag = "v2.15", -- uncomment to pin to a specific release
+            init = function()
+                -- VimTeX configuration goes here, e.g.
+                vim.g.vimtex_view_method = "zathura"
+            end
+        },
     },
     -- Configure any other settings here. See the documentation for more details.
     -- colorscheme that will be used when installing plugins.
