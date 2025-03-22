@@ -33,6 +33,7 @@ require("lazy").setup({
             'nvim-lualine/lualine.nvim',
             dependencies = { 'nvim-tree/nvim-web-devicons' }
         },
+        {'mbbill/undotree'},
         {'neovim/nvim-lspconfig'},
         {'hrsh7th/cmp-nvim-lsp'},
         {'hrsh7th/nvim-cmp'},
