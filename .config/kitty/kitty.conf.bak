@@ -1,7 +1,7 @@
 # vim:fileencoding=utf-8:foldmethod=marker
 
 # BEGIN_KITTY_FONTS
-font_family      family="FreeMono"
+font_family      family="JetBrainsMono Nerd Font"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
@@ -2648,6 +2648,6 @@ update_check_interval 0
 
 
 # BEGIN_KITTY_THEME
-# Gruvbox Dark
+# Atom
 include current-theme.conf
 # END_KITTY_THEME

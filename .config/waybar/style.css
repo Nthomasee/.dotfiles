@@ -10,4 +10,5 @@ window#waybar {
 
 #workspaces button {
     color: #ffffff;
+    padding: 0;
 }
