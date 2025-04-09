@@ -15,16 +15,10 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Make sure to setup `mapleader` and `maplocalleader` before
--- loading lazy.nvim so that mappings are correct.
--- This is also a good place to setup other settings (vim.opt)
 vim.g.maplocalleader = "\\"
 
--- Setup lazy.nvim
 require("lazy").setup({
     spec = {
-        -- lua/plugins/rose-pine.lua
-        -- import your plugins
         { import = "plugins" },
         {'tpope/vim-fugitive'},
         { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
@@ -50,12 +44,29 @@ require("lazy").setup({
             "folke/tokyonight.nvim",
             lazy = false,
             priority = 1000,
-            opts = {},
-        },
-    },
-    -- Configure any other settings here. See the documentation for more details.
-    -- colorscheme that will be used when installing plugins.
-    -- install = { colorscheme = { "habamax" } },
-    -- automatically check for plugin updates
-    -- checker = { enabled = true },
+            config = function()
+                require("tokyonight").setup({
+                    style = "storm",
+                    light_style = "day",
+                    transparent = false,
+                    terminal_colors = true,
+                    styles = {
+                        comments = { italic = true },
+                        keywords = { italic = true },
+                        functions = {},
+                        variables = {},
+                        sidebars = "dark",
+                        floats = "dark",
+                    },
+                    on_highlights = function(hl, colors)
+                        hl.LineNr = { fg = "#b6bcd4" }        -- Обычные номера строк
+                        hl.CursorLineNr = { fg = "#b6bcd4" }  -- Номер текущей строки
+                        hl.LineNrAbove = { fg = "#b6bcd4" }
+                        hl.LineNrBelow = { fg = "#b6bcd4" }
+                    end,
+                })
+                vim.cmd([[colorscheme tokyonight]])
+            end,
+        }
+    }
 })
