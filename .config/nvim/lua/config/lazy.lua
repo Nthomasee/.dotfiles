@@ -59,8 +59,8 @@ require("lazy").setup({
                         floats = "dark",
                     },
                     on_highlights = function(hl, colors)
-                        hl.LineNr = { fg = "#9a4bf4" }        -- Обычные номера строк
-                        hl.CursorLineNr = { fg = "#9a4bf4" }  -- Номер текущей строки
+                        hl.LineNr = { fg = "#9a4bf4" }
+                        hl.CursorLineNr = { fg = "#9a4bf4" }
                         hl.LineNrAbove = { fg = "#b6bcd4" }
                         hl.LineNrBelow = { fg = "#b6bcd4" }
                     end,
