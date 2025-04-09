@@ -59,14 +59,21 @@ require("lazy").setup({
                         floats = "dark",
                     },
                     on_highlights = function(hl, colors)
-                        hl.LineNr = { fg = "#b6bcd4" }        -- Обычные номера строк
-                        hl.CursorLineNr = { fg = "#b6bcd4" }  -- Номер текущей строки
+                        hl.LineNr = { fg = "#9a4bf4" }        -- Обычные номера строк
+                        hl.CursorLineNr = { fg = "#9a4bf4" }  -- Номер текущей строки
                         hl.LineNrAbove = { fg = "#b6bcd4" }
                         hl.LineNrBelow = { fg = "#b6bcd4" }
                     end,
                 })
                 vim.cmd([[colorscheme tokyonight]])
             end,
+        },
+        {
+            'windwp/nvim-autopairs',
+            event = "InsertEnter",
+            config = true
+            -- use opts = {} for passing setup options
+            -- this is equivalent to setup({}) function
         }
     }
 })

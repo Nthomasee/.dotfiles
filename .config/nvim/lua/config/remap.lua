@@ -19,5 +19,5 @@ vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle) --undotree
 
 
 -- Advanced block closing mappings
-vim.keymap.set('i', '{<CR>', '{<CR>}<ESC>O')
-vim.keymap.set('i', '{;<CR>', '{<CR>};<ESC>O')
+-- vim.keymap.set('i', '{<CR>', '{<CR>}<ESC>O')
+-- vim.keymap.set('i', '{;<CR>', '{<CR>};<ESC>O')
