@@ -1,7 +1,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: JetBrainsMono Nerd Font;
-    font-size: 16px;
+    font-size: 14px;
 }
 window#waybar {
     background-color: rgb(0,0,0);

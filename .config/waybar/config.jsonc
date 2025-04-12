@@ -10,14 +10,14 @@
         "hyprland/workspaces"
     ],
     "modules-center": [
-        "clock",
+        "clock"
     ],
     "modules-right": [
+        "hyprland/language",
         "pulseaudio",
         "cpu",
-        "temperature",
         "memory",
-        "tray",
+        "tray"
     ],
     "tray": {
         // "icon-size": 21,
@@ -30,18 +30,18 @@
         "format": "{:%a %b %d %H:%M %Y}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
-                    "mode"          : "year",
-                    "mode-mon-col"  : 3,
-                    "weeks-pos"     : "right",
-                    "on-scroll"     : 1,
-                    "format": {
-                              "months":     "<span color='#ffead3'><b>{}</b></span>",
-                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
-                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
-                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
-                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
-                              }
-                    },
+            "mode"          : "year",
+            "mode-mon-col"  : 3,
+            "weeks-pos"     : "right",
+            "on-scroll"     : 1,
+            "format": {
+                "months":     "<span color='#ffead3'><b>{}</b></span>",
+                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        }
     },
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -60,33 +60,30 @@
             "25": " ",
             "urgent": "",
             "active": "",
-            "default": "",
+            "default": ""
         },
         "sort-by-number": true
     },
     "cpu": {
-        "format": "[CPU: {usage}%",
-        "tooltip": false
+        "format": "| CPU: {usage}% ",
+            "tooltip": false
     },
     "memory": {
         "interval": 10,
-        "format": "[MEM: {used} GiB]"
-    },
-    "temperature": {
-        // "thermal-zone": 2,
-        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-        "critical-threshold": 80,
-        "format-critical": "{temperatureC}°C",
-        "format": " {temperatureC}°C]",
+        "format": "| MEM: {used} GiB |"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "[Out: {volume}%  In: {format_source}]",
+        "format": "| Out: {volume}%  In: {format_source} ",
         "format-bluetooth": "{volume}%  {format_source}",
         "format-bluetooth-muted": "  {format_source}",
         "format-muted": " {format_source}",
         "format-source": "{volume}%",
-        "format-source-muted": "",
-        },
-        "on-click": "pavucontrol"
+        "format-source-muted": ""
+    },
+    "hyprland/language": {
+    "format": "{}",
+    "format-en": "[EN]",
+    "format-ru": "[RU]"
     }
+}
