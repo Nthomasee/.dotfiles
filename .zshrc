@@ -32,9 +32,9 @@ export MANPAGER="nvim +Man!"
 #================================
 
 #=============aliases============
-alias ls='eza -s type'
-alias lsa="eza -a -s type"
-alias lsal="eza -al -s type"
+alias ls='eza'
+alias lsa="eza -a"
+alias lsal="eza -al"
 alias v="nvim"
 alias ffc="fastfetch -c ~/.config/fastfetch/qwe.jsonc"
 alias ipower="upower -i $(upower -e | grep BAT)"
