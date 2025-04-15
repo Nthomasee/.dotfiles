@@ -36,3 +36,11 @@ end
 
 # Created by `pipx` on 2025-02-23 23:52:59
 set PATH $PATH /home/nathan/.local/bin
+
+function fish_postexec --on-event fish_postexec
+    set exit_code $status
+    if test $exit_code -ne 0
+        echo (set_color red)"✖"(set_color yellow)" Exited abnormally with code "(set_color red)$exit_code(set_color normal)" at "(set_color blue)(date "+%a %b %d %H:%M:%S")(set_color normal)
+    end
+end
+
