@@ -41,34 +41,6 @@ require("lazy").setup({
             end
         },
         {
-            "folke/tokyonight.nvim",
-            lazy = false,
-            priority = 1000,
-            config = function()
-                require("tokyonight").setup({
-                    style = "storm",
-                    light_style = "day",
-                    transparent = false,
-                    terminal_colors = true,
-                    styles = {
-                        comments = { italic = true },
-                        keywords = { italic = true },
-                        functions = {},
-                        variables = {},
-                        sidebars = "dark",
-                        floats = "dark",
-                    },
-                    on_highlights = function(hl, colors)
-                        hl.LineNr = { fg = "#9a4bf4" }
-                        hl.CursorLineNr = { fg = "#9a4bf4" }
-                        hl.LineNrAbove = { fg = "#b6bcd4" }
-                        hl.LineNrBelow = { fg = "#b6bcd4" }
-                    end,
-                })
-                vim.cmd([[colorscheme tokyonight]])
-            end,
-        },
-        {
             'windwp/nvim-autopairs',
             event = "InsertEnter",
             config = true

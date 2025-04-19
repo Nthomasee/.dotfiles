@@ -39,6 +39,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 -- These are example language servers. 
 require'lspconfig'.clangd.setup{}
 require'lspconfig'.pyright.setup{}
+require'lspconfig'.gopls.setup{}
 require'lspconfig'.rust_analyzer.setup{
   settings = {
     ['rust-analyzer'] = {

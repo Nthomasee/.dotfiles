@@ -8,7 +8,7 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
-vim.opt.wrap = true
+vim.opt.wrap = false
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
@@ -24,3 +24,5 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 vim.opt.foldmethod= "marker"
+
+vim.g.zig_fmt_autosave = 0
