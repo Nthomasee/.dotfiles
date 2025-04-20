@@ -1,12 +1,12 @@
 # vim:fileencoding=utf-8:foldmethod=marker
 
 # BEGIN_KITTY_FONTS
-font_family      family="JetBrainsMono Nerd Font"
+font_family      family="Inconsolata"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
 # END_KITTY_FONTS
- font_size 10.0
+ font_size 12.0
 
 #: Fonts {{{
 
@@ -2648,6 +2648,6 @@ update_check_interval 0
 
 
 # BEGIN_KITTY_THEME
-# Atom
+# Catppuccin-Macchiato
 include current-theme.conf
 # END_KITTY_THEME
