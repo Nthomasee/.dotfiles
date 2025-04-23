@@ -1,3 +1,3 @@
 #!/bin/sh
 
-ls config.jsonc style.css | entr sh -c "pkill waybar; waybar >/dev/null 2>&1 &"
+ls config.jsonc style.css | entr sh -c "clear;pkill waybar; waybar &"

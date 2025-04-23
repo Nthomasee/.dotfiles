@@ -1,14 +1,30 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: JetBrainsMono Nerd Font;
+    font-family: Fira Code;
     font-size: 14px;
+    color: #ffffff;
 }
 window#waybar {
-    background-color: rgb(0,0,0);
-    color: #ffffff;
+    background: rgba(30, 30, 46, 0.85);
+}
+
+.modules-left {
+  margin-left: 5px;
+}
+
+.modules-right {
+  margin-right: 5px;
+}
+#workspaces {
+    padding: 0px;
+    margin: 0;
 }
 
 #workspaces button {
-    color: #ffffff;
-    padding: 0;
+    padding: 0 2px;
+    margin: 0;
+    min-height: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
 }
