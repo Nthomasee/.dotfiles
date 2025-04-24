@@ -1,10 +1,10 @@
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
-vim.opt.tabstop = 4       -- Устанавливает ширину табуляции на 4 пробела
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4    -- Устанавливает ширину отступа на 4 пробела
-vim.opt.expandtab = true
+--    vim.opt.softtabstop = 4
+--    vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+vim.opt.expandtab = false
 
 vim.opt.smartindent = true
 

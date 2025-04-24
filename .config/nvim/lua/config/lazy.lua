@@ -56,6 +56,11 @@ require("lazy").setup({
                     -- Configuration here, or leave empty to use defaults
                 })
             end
+        },
+        {
+            'numToStr/Comment.nvim',
+            opts = {
+            }
         }
     }
 })
