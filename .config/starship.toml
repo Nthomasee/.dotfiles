@@ -45,7 +45,6 @@ symbol = " "
 format = '\[[$symbol$branch]($style)\]'
 
 [git_branch]
-symbol = " "
 format = '\[[$symbol$branch]($style)\]'
 
 [git_commit]
