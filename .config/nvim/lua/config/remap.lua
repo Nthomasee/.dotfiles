@@ -17,6 +17,13 @@ vim.keymap.set("n", "<leader>gs", vim.cmd.Git) --fugitive
 
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle) --undotree
 
+vim.keymap.set("n", "Q", "<nop>")
+
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+vim.api.nvim_create_user_command('Q', 'quit', { bang = true })
+-- vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 -- Advanced block closing mappings
 -- vim.keymap.set('i', '{<CR>', '{<CR>}<ESC>O')

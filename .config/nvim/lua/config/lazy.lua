@@ -70,6 +70,14 @@ require("lazy").setup({
             ---@module 'render-markdown'
             ---@type render.md.UserConfig
             opts = {},
+        },
+        {
+            "lukas-reineke/indent-blankline.nvim",
+            main = "ibl",
+            ---@module "ibl"
+            ---@type ibl.config
+            opts = {},
         }
+
     }
 })
