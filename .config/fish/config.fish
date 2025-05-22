@@ -24,6 +24,7 @@ set -gx EDITOR nvim
 set -gx SDL_VIDEODRIVER wayland
 set fish_greeting ""
 set -gx MANPAGER 'nvim +Man!'
+set -U fish_color_command purple
 #=============================================
 
 
