@@ -3,7 +3,7 @@
 SETUVAR __fish_initialized:3800
 SETUVAR fish_color_autosuggestion:6272a4
 SETUVAR fish_color_cancel:ff5555\x1e\x2d\x2dreverse
-SETUVAR fish_color_command:8be9fd
+SETUVAR fish_color_command:purple
 SETUVAR fish_color_comment:6272a4
 SETUVAR fish_color_cwd:50fa7b
 SETUVAR fish_color_cwd_root:red
